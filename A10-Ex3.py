@@ -4,7 +4,7 @@ def main():
     for x in range(num):
         usuarios= {
             "username": str(input("Introduce el nombre del usuario: ")),
-            "department": str(input("Introduce el departamento: ")),
+            "department": str(input("Introduce el nombre del departamento: ")),
             "classroom": int(input("Introduce el numero de clase (entre 1 i 15): "))
         }
         while usuarios["classroom"] < 1 or usuarios["classroom"] > 15:
