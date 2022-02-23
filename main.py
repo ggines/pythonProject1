@@ -1,23 +1,13 @@
-# This is a sample Python script.
-
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
+#demana nom del fitxer, que vol introduïr i ho mostri
+from functions import file_open
+from functions import file_write
+from functions import check_file
+MSG= "Introdueix el nombre del fitxer: "
 
 def main():
-    # Use a breakpoint in the code line below to debug your script.
-    num = int(input("Introdueix un nombre: "))
-    suma = 1
-    sumaFinal = 0
-    for x in range(num):
-        suma = x + suma
-        if suma < num:
-            print(x, end=" ")
-            sumaFinal = x + sumaFinal
-    print("\nLa suma final es: ", sumaFinal)
-
-# Press the green button in the gutter to run the script.
+    fichero = input(MSG)
+    check_file(fichero)
+    f= file_open(fichero)
+    file_write(fichero,f)
 if __name__ == '__main__':
     main()
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
