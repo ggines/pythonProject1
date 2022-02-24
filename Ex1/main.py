@@ -1,4 +1,3 @@
-#demana nom del fitxer, que vol introduïr i ho mostri
 #from functions import file_open
 from functions import file_write
 #from functions import check_file
